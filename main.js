@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 	let scrollTop = document.documentElement.scrollTop;
 	for (let i = 0; i < sectionsToAnimate.length; i++) {
 		let heigthAnimated = sectionsToAnimate[i].offsetTop;
-		if (heigthAnimated- 200 < scrollTop) {
+		if (heigthAnimated- 300 < scrollTop) {
 			sectionsToAnimate[i].style.opacity = 1;
 		}
 	}
