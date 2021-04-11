@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+p {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+	background-color: rgba(145, 145, 145, 0.432);
+}
+
+body::-webkit-scrollbar{
+	width: 0;
+}
+.nav {
+	background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.842),
+			rgba(0, 0, 0, 0.651)
+		),
+		url("https://image.freepik.com/foto-gratis/lugar-trabajo-telefono-inteligente-computadora-portatil-mesa-negra-fondo-copyspace-vista-superior_144627-24860.jpg")
+			no-repeat;
+
+	background-size: cover;
+	background-position-y: 70%;
+	background-position-x: 100%;
+	position: relative;
+	display: flex;
+	top: 0;
+	width: 100vw;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hide {
+	display: none;
+}
+
+.nav-sections {
+	display: flex;
+	justify-content: center;
+}
+.nav-name {
+	display: flex;
+	padding: 100px;
+	flex-direction: column;
+}
+.nav-title {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 2em;
+}
+
+.nav-subtitle {
+	padding-top: 5px;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 1.3em;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 10px;
+	justify-content: center;
+	background-color: rgb(202, 202, 202);
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.075);
+}
+
+.link-item {
+	display: block;
+	transition: 0.2s;
+	padding: 10px 20px;
+	color: black;
+	font-size: 1.5em;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	border-radius: 5px;
+}
+
+.webSites {
+	position: fixed;
+	top: 300px;
+	z-index: 100;
+}
+
+.tag {
+	display: flex;
+	margin-top: 10px;
+	padding-left: 5px;
+	height: 50px;
+	width: 70px;
+	transition: 0.2s;
+	transform: translateX(-20px);
+	border-radius: 0px 15px 15px 0px;
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 20px 0px rgba(56, 56, 241, 0.507);
+}
+
+.fab {
+	color: rgb(0, 0, 0);
+	font-size: 27px;
+}
+
+.tag:hover {
+	transform: translateX(0px);
+}
+
+.link-item:hover {
+	transition: 0.2s;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.363);
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.animating {
+	transition: 1s;
+	/* margin-top: 50px; */
+	padding: 20px 100px;
+	display: flex;
+	opacity: 0;
+}
+
+.section-info {
+	width: 50%;
+	height: auto;
+}
+.info-title {
+	font-size: 3em;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 10px;
+	text-align: end;
+	width: 100%;
+}
+
+.section {
+	display: flex;
+	position: absolute;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.card {
+	position: absolute;
+	height: auto;
+	padding: 70px;
+	background-color: rgb(221, 221, 221);
+	border-radius: 20px;
+	transition-duration: 0.3s;
+	box-shadow: 0px 10px 80px 0px rgb(145, 145, 145);
+	width: auto;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.card:hover {
+	cursor: pointer;
+	transform: translateY(-20px);
+	transition-duration: 0.3s;
+}
+.welcome {
+	text-align: center;
+}
+
+.welcome-span {
+	font-size: 2em;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.showing1 {
+	animation: showElement1 0.5s;
+	transform: scale(1);
+}
+
+.showing2 {
+	animation: showElement2 0.5s;
+	transform: scale(1);
+}
+
+.clicker {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.clicker-span {
+	opacity: 0.5;
+	font-size: 0.8em;
+}
+
+.skills {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+}
+
+.title-right{
+	display: flex;
+	justify-content: end;
+}
+
+.skills-sections {
+	display: flex;
+	justify-content: center;
+	/* margin-top: 5em; */
+	flex-direction: column;
+}
+
+.subtitle{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 1em 2em;
+
+}
+
+.skills-sections .fab,
+.fas {
+	font-size: 3em;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.skill span {
+	margin-top: 2em;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.tecnical-skills{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.soft-skills{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.fa-html5 {
+	color: orangered;
+}
+
+.fa-css3-alt {
+	color: rgb(0, 81, 255);
+}
+
+.fa-js-square {
+	color: rgb(194, 126, 0);
+}
+
+.fa-react {
+	color: rgb(0, 183, 255);
+}
+
+.reactAnimation {
+	animation: reactAnimation;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+}
+
+.fa-tools, .fa-book-reader, .fa-chalkboard-teacher {
+	color: grey;
+}
+
+@keyframes reactAnimation {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes showElement1 {
+	0% {
+		transform: rotate(-360deg) scale(0);
+	}
+	10% {
+		transform: rotate(-324deg) scale(0.1);
+	}
+	20% {
+		transform: rotate(-288deg) scale(0.2);
+	}
+	30% {
+		transform: rotate(-252deg) scale(0.3);
+	}
+	40% {
+		transform: rotate(-216deg) scale(0.4);
+	}
+	50% {
+		transform: rotate(-180deg) scale(0.5);
+	}
+	60% {
+		transform: rotate(-144deg) scale(0.6);
+	}
+	70% {
+		transform: rotate(-108deg) scale(0.7);
+	}
+	80% {
+		transform: rotate(-72deg) scale(0.8);
+	}
+	90% {
+		transform: rotate(-36deg) scale(0.9);
+	}
+	100% {
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+@keyframes showElement2 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
