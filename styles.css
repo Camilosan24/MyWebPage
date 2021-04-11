@@ -2,10 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
 
-*, html {
+*,
+html {
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
+	/* padding-bottom: 50px; */
 }
 
 p {
@@ -14,9 +16,10 @@ p {
 
 body {
 	background-color: rgba(145, 145, 145, 0.432);
+	padding-bottom: 100px;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
 	width: 0;
 }
 .nav {
@@ -214,7 +217,7 @@ a:link {
 	flex-direction: row;
 }
 
-.title-right{
+.title-right {
 	display: flex;
 	justify-content: end;
 }
@@ -226,12 +229,11 @@ a:link {
 	flex-direction: column;
 }
 
-.subtitle{
+.subtitle {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	padding: 1em 2em;
-
 }
 
 .skills-sections .fab,
@@ -240,9 +242,14 @@ a:link {
 }
 
 .skill {
+	width: 60px;
+	height: 60px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
 }
 
 .skill span {
@@ -250,7 +257,8 @@ a:link {
 	font-family: "Nunito Sans", sans-serif;
 }
 
-.tecnical-skills{
+.tecnical-skills {
+	margin-top: 50px;
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -258,11 +266,12 @@ a:link {
 	flex-wrap: wrap;
 }
 
-.soft-skills{
+.soft-skills {
 	display: flex;
 	width: 100%;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .fa-html5 {
@@ -288,7 +297,9 @@ a:link {
 	animation-timing-function: linear;
 }
 
-.fa-tools, .fa-book-reader, .fa-chalkboard-teacher {
+.fa-tools,
+.fa-book-reader,
+.fa-chalkboard-teacher {
 	color: grey;
 }
 
@@ -350,10 +361,11 @@ a:link {
 
 	.animating {
 		transition: 2s;
-		padding: 20px 50px;
+		padding: 20px 20px;
 		display: flex;
 		flex-direction: column;
 		opacity: 0;
+		/* width:100%; */
 	}
 
 	.nav-name {
@@ -378,17 +390,22 @@ a:link {
 		text-align: center;
 	}
 
-	.nav-sections ul{
+	.nav-sections ul {
 		padding: 0;
 	}
-	a{
+	a {
 		box-shadow: 1px 1px 10px 0px grey;
 	}
-	.tecnical-skills{
+	.tecnical-skills {
 		display: flex;
 		width: 100%;
 		flex-direction: row;
-		justify-content:center;
+		justify-content: center;
 		flex-wrap: wrap;
+	}
+
+	.skill {
+		display: flex;
+		margin: 30px;
 	}
 }
